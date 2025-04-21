@@ -1,3 +1,9 @@
-[gd_scene format=3 uid="uid://qqkk6ldwiv4m"]
+[gd_scene load_steps=2 format=3 uid="uid://qqkk6ldwiv4m"]
+
+[ext_resource type="PackedScene" uid="uid://bd6k83q61myny" path="res://tile_map_layer.tscn" id="1_80nbo"]
 
 [node name="Game" type="Node2D"]
+
+[node name="TileMapLayer" parent="." instance=ExtResource("1_80nbo")]
+
+[node name="Camera2D" type="Camera2D" parent="."]
